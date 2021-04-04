@@ -1,0 +1,59 @@
+#round_the_image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#about_me_paragraphs {
+    font-size: x-large;
+}
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 10px;
+    background-color: black;
+    animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+    from,
+    to {
+        background-color: transparent
+    }
+    50% {
+        background-color: black;
+    }
+}
+
+#container {
+    text-align: center;
+}
+
+#myskill {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+}
+
+#myproject {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    position: fixed;
+}
+
+#text {
+    display: inline-block;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headings {
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
