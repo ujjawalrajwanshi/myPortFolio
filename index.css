@@ -2,6 +2,13 @@
     border-radius: 50%;
 }
 
+html {
+    height: 100%;
+    margin: auto;
+    width: 960px;
+    overflow: scroll;
+}
+
 
 /* ******************************************************** */
 
@@ -13,7 +20,7 @@
 #text {
     display: inline-block;
     vertical-align: middle;
-    color: black;
+    color: white;
     letter-spacing: 2px;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -36,7 +43,7 @@
     top: 5px;
     display: inline-block;
     vertical-align: middle;
-    color: black;
+    color: blue;
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -44,11 +51,11 @@
 }
 
 .link:hover {
-    color: blue;
+    color: white;
 }
 
 .link:visited {
-    color: blue;
+    color: white;
 }
 
 
@@ -56,21 +63,21 @@
 
 #myskill {
     width: 50%;
-    height: 100%;
-    position: fixed;
+    height: fit-content;
+    position: absolute;
     left: 2%;
 }
 
 #myproject {
     width: 50%;
-    height: 100%;
+    height: fit-content;
     right: 0;
-    position: fixed;
+    position: absolute;
 }
 
 #text {
     display: inline-block;
-    color: black;
+    color: rgb(255, 255, 255);
     letter-spacing: 2px;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -80,6 +87,7 @@
     letter-spacing: 2px;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 
@@ -115,7 +123,7 @@ li {
     animation-fill-mode: both;
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 8 {
     li:nth-child(#{$i}) {
         animation-delay: .25s * $i;
     }
@@ -133,12 +141,6 @@ li {
     100% {
         opacity: 1;
     }
-}
-
-.litext {
-    color: black;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 
