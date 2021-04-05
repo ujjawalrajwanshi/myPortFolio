@@ -96,3 +96,50 @@
 
 
 /* ******************************************* */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+ul {
+    width: 300px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -150px;
+}
+
+li {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: both;
+}
+
+@for $i from 1 through 6 {
+    li:nth-child(#{$i}) {
+        animation-delay: .25s * $i;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 0.5;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.litext {
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ************************************** */
