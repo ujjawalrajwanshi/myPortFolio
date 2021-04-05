@@ -57,13 +57,23 @@
 #myskill {
     width: 50%;
     height: 100%;
-    left: 0;
+    position: fixed;
+    left: 2%;
 }
 
 #myproject {
     width: 50%;
     height: 100%;
     right: 0;
+    position: fixed;
+}
+
+#text {
+    display: inline-block;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .headings {
