@@ -1,19 +1,22 @@
 #round_the_image {
-    width: 200px;
     border-radius: 50%;
 }
 
-#about_me_paragraphs {
-    font-size: x-large;
-}
+
+/* ******************************************************** */
 
 #cursor {
+    background-color: white;
+    animation: blink .75s step-end infinite;
+}
+
+#text {
     display: inline-block;
     vertical-align: middle;
-    width: 3px;
-    height: 10px;
-    background-color: black;
-    animation: blink .75s step-end infinite;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes blink {
@@ -26,14 +29,34 @@
     }
 }
 
-#container {
-    text-align: center;
+
+/* **************************************************************************** */
+
+.link {
+    top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
 }
+
+.link:hover {
+    color: blue;
+}
+
+.link:visited {
+    color: blue;
+}
+
+
+/* ************************************************* */
 
 #myskill {
     width: 50%;
     height: 100%;
-    position: fixed;
     left: 0;
 }
 
@@ -41,15 +64,6 @@
     width: 50%;
     height: 100%;
     right: 0;
-    position: fixed;
-}
-
-#text {
-    display: inline-block;
-    color: black;
-    letter-spacing: 2px;
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .headings {
@@ -57,3 +71,18 @@
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/* ************************************* */
+
+.imga {
+    position: relative;
+}
+
+.placingtext {
+    position: absolute;
+    margin-top: 100px;
+}
+
+
+/* ******************************************* */
