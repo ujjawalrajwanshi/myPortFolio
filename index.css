@@ -10,7 +10,7 @@ html {
 }
 
 
-/* ******************************************************** */
+/* *****************AUTO TYPEWRITING CURSOR AND TEXT******************************** */
 
 #cursor {
     background-color: white;
@@ -37,7 +37,7 @@ html {
 }
 
 
-/* **************************************************************************** */
+/* *****************LINK STYLE******************************************** */
 
 .link {
     top: 5px;
@@ -59,39 +59,7 @@ html {
 }
 
 
-/* ************************************************* */
-
-#myskill {
-    width: 50%;
-    height: fit-content;
-    position: absolute;
-    left: 2%;
-}
-
-#myproject {
-    width: 50%;
-    height: fit-content;
-    right: 0;
-    position: absolute;
-}
-
-#text {
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.headings {
-    letter-spacing: 2px;
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-}
-
-
-/* ************************************* */
+/* ****************IMAGE AND TEXTPLACING****************************** */
 
 .imga {
     position: relative;
@@ -103,45 +71,48 @@ html {
 }
 
 
-/* ******************************************* */
+/*****************LIST ITEMS STYLE***************************************/
 
-@import url(https://fonts.googleapis.com/css?family=Lato);
-ul {
-    width: 300px;
-    position: absolute;
-    margin-top: 25px;
-    margin-left: -150px;
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    overflow: hidden;
 }
 
-li {
-    position: relative;
+.navbar-item {
+    float: left;
+    color: black;
+    display: inline;
+}
+
+.navbar-block {
     display: block;
-    margin-bottom: 5px;
-    padding-bottom: 10px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     text-align: center;
-    animation: fadeIn 0.5s linear;
-    animation-fill-mode: both;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: #FFFFFF;
+    /* color: black ; */
 }
 
-@for $i from 1 through 8 {
-    li:nth-child(#{$i}) {
-        animation-delay: .25s * $i;
-    }
+.navbar-block:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    height: 1px;
+    width: 0px;
+    background: black;
+    transition: width .2s linear;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-        top: 100px;
-    }
-    75% {
-        opacity: 0.5;
-        top: 0px;
-    }
-    100% {
-        opacity: 1;
-    }
+.navbar-block:hover:after {
+    width: 96%;
+    background: black;
 }
-
-
-/* ************************************** */

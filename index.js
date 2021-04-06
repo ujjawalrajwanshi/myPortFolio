@@ -1,9 +1,10 @@
 var _CONTENT = [
     "Hi,I am Ujjawal Rajwanshi",
     "I am a Final Year Student",
-    "I am cuurently Persuing B.Tech in Computer Science and Engineering",
+    "I am currently Persuing B.Tech in Computer Science and Engineering",
     "I am a Competitive Programmer",
-    "I am a Machine Learning Enthusiast"
+    "I am a ML/AI Enthusiast",
+	
 ];
 
 var _PART = 0;
