@@ -3,7 +3,26 @@
 }
 
 body {
+    background-image: "backimage.jpeg";
     background-size: 100%;
+}
+
+* {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.link:visited {
+    color: white;
+}
+
+.link.hover {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .jumbotron {
@@ -16,89 +35,46 @@ body {
 }
 
 .name {
-    font-family: 'Dosis', 'sans-serif';
     font-size: 96px;
+    /* color:black; */
     font-weight: 400;
     margin-bottom: 10px;
     text-align: center;
 }
 
-html {
-    height: 100%;
-    margin: auto;
-    width: 960px;
-    overflow: scroll;
-}
-
-* {
-    color: white;
-}
-
-.name {
-    font-family: 'Dosis', 'sans-serif';
-    font-size: 96px;
-    font-weight: 400;
-    margin-bottom: 10px;
+.handle {
+    font-weight: 200;
+    font-size: 64px;
+    /* color: black; */
+    margin-bottom: 50px;
     text-align: center;
 }
-
-
-/* *****************LINK STYLE******************************************** */
-
-.link {
-    top: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-}
-
-.link:hover {
-    color: white;
-}
-
-.link:visited {
-    color: white;
-}
-
-
-/* ****************IMAGE AND TEXTPLACING****************************** */
-
-.imga {
-    position: relative;
-}
-
-.placingtext {
-    position: absolute;
-    margin-top: 100px;
-}
-
-
-/*****************LIST ITEMS STYLE***************************************/
 
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: black;
     overflow: hidden;
 }
 
 .navbar-item {
     float: left;
+    color: black;
     display: inline;
 }
 
 .navbar-block {
     display: block;
-    font-family: 'Raleway', sans-serif;
+    color: black;
     font-weight: 500;
     font-size: 18px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     padding-bottom: 3px;
+    color: #FFFFFF;
+    /* color: black ; */
 }
 
 .navbar-block:after {
@@ -108,9 +84,11 @@ html {
     margin-top: 2px;
     height: 1px;
     width: 0px;
+    background: black;
     transition: width .2s linear;
 }
 
 .navbar-block:hover:after {
     width: 96%;
+    background: black;
 }
