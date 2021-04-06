@@ -2,6 +2,24 @@
     border-radius: 50%;
 }
 
+.jumbotron {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.name {
+    font-family: 'Dosis', 'sans-serif';
+    font-size: 96px;
+    /* color:black; */
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 html {
     height: 100%;
     margin: auto;
@@ -9,31 +27,17 @@ html {
     overflow: scroll;
 }
 
-
-/* *****************AUTO TYPEWRITING CURSOR AND TEXT******************************** */
-
-#cursor {
-    background-color: white;
-    animation: blink .75s step-end infinite;
-}
-
-#text {
-    display: inline-block;
-    vertical-align: middle;
+* {
     color: white;
-    letter-spacing: 2px;
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes blink {
-    from,
-    to {
-        background-color: transparent
-    }
-    50% {
-        background-color: black;
-    }
+.name {
+    font-family: 'Dosis', 'sans-serif';
+    font-size: 96px;
+    /* color:black; */
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
